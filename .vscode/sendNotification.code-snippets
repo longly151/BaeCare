@@ -1,0 +1,21 @@
+{
+    "sendNotification": {
+        "prefix": "sendNotification",
+        "body": [
+            "  sendNotification = async (token: string, title: string, body: string) => {",
+            "    const EXPO_NOTIFICATION_URL = '${1}';",
+            "    const message = {",
+            "      to: token,",
+            "      sound: 'default',",
+            "      title,",
+            "      body,",
+            "      data: {token: Global.token}",
+            "    }",
+            "  ",
+            "    await axios.post(EXPO_NOTIFICATION_URL, message)",
+            "    alert('Triệu hồi gấu 👦 thành công!')",
+            "  }"
+        ],
+        "description": "sendNotification"
+    }
+}

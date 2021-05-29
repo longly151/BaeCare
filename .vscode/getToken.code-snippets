@@ -1,0 +1,14 @@
+{
+    "getToken": {
+        "prefix": "getToken",
+        "body": [
+            "  getToken = async () => {",
+            "    const token = await Notifications${1};",
+            "    console.log('Token: ', token);",
+            "    Global.token = token.data;",
+            "    return token.data;",
+            "  }"
+        ],
+        "description": "getToken"
+    }
+}
