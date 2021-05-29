@@ -2,15 +2,15 @@
     "initNotification": {
         "prefix": "initNotification",
         "body": [
-            "  initNotification = async() => {",
-            "    Notifications.setNotificationHandler({",
-            "      handleNotification: async () => ({",
-            "        shouldShowAlert: true,",
-            "        shouldPlaySound: true,",
-            "        shouldSetBadge: true,",
-            "      }),",
-            "    });",
-            "  }"
+            "initNotification = async() => {",
+            "  Notifications.setNotificationHandler({",
+            "    handleNotification: async () => ({",
+            "      shouldShowAlert: true,",
+            "      shouldPlaySound: true,",
+            "      shouldSetBadge: true,",
+            "    }),",
+            "  });",
+            "}"
         ],
         "description": "initNotification"
     }

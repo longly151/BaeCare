@@ -2,16 +2,16 @@
     "requestPermission": {
         "prefix": "requestPermission",
         "body": [
-            "  requestPermission = async () => {",
-            "    const { status } = await Notifications${1};",
+            "requestPermission = async () => {",
+            "  const { status } = await Notifications${1};",
+            "  if (status !== \"${2}\") {",
+            "    const { status } = await Notifications${3};",
             "    if (status !== \"${2}\") {",
-            "      const { status } = await Notifications${3};",
-            "      if (status !== \"${2}\") {",
-            "        alert(\"Failed to get push token for push notification!\");",
-            "        return;",
-            "      }",
+            "      alert(\"Failed to get push token for push notification!\");",
+            "      return;",
             "    }",
-            "  }"
+            "  }",
+            "}"
         ],
         "description": "requestPermission"
     }
