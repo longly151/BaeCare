@@ -10,6 +10,7 @@ const TabOneScreen: React.FC = () => {
   /**
    * Handler
    */
+
   const [text, setText] = useState('');
 
   Helper.initNotification();
